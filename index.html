@@ -1,9 +1,51 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>index.html</h1>
-        <script src="index.js"></script>
+        <header>
+            <input name="color-picker" id="color-picker" type="color" value="#00FFE1" />
+            <select name="scheme-select" id="scheme-select">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+
+            </select>
+            <button id="get-color-button">Get color scheme</button>
+        </header>
+        <main class="app" id="color-container">
+            <div class="color-column">
+                <div class="color-strip" style="background-color: red;">&nbsp;</div>
+                <div class="hex-value">#F55A5A</div>
+            </div>
+            <div class="color-column">
+                <div class="color-strip" style="background-color: blue;">&nbsp;</div>
+                <div class="hex-value">#F55A5A</div>
+            </div>
+            <div class="color-column">
+                <div class="color-strip" style="background-color: red;">&nbsp;</div>
+                <div class="hex-value">#F55A5A</div>
+            </div>
+            <div class="color-column">
+                <div class="color-strip" style="background-color: blue;">&nbsp;</div>
+                <div class="hex-value">#F55A5A</div>
+            </div>
+            <div class="color-column">
+                <div class="color-strip" style="background-color: red;">&nbsp;</div>
+                <div class="hex-value">#F55A5A</div>
+            </div>
+
+
+        </main>
+        <script src="index.js" type="module"></script>
     </body>
 </html>
